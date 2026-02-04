@@ -1,0 +1,5 @@
+
+world kvstore {
+  export get: func(key: string) -> string;
+  export set: func(key:string)-> string;
+}

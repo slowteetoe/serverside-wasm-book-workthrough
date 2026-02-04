@@ -1,0 +1,3 @@
+[workspace]
+resolver="2"
+members = ["chapter02/hello_world/hello_world_guest", "chapter03/smart_cms/smartcms_ml_guest", "chapter03/smart_cms/smartcms_test_host", "chapter04/hello_world_wasi/hello_world_wasi_host", "chapter04/wasi02/hello_world_wasi02", "chapter04/wasi02/wasi02_lib", "chapter05/wasi_nn_example", "chapter05/wasm_udf_example"]

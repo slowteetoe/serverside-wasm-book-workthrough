@@ -1,0 +1,5 @@
+package component:smartcms-kvstore;
+world kvstore {
+ export get: func(key: string) -> string;
+ export set: func(key: string, value: string);
+}
