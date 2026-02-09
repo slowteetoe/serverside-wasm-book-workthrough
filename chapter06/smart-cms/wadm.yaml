@@ -35,10 +35,24 @@ spec:
                   properties:
                     bucket: default
                     enable_bucket_auto_create: "true"
+        - type: link
+          properties:
+            target: ollama
+            namespace: thomastaylor312
+            package: ollama
+            interfaces: [generate]
+            target_config:
+              - name: ollama-conf
+                properties:
+                  model_name: gurubot/tinystories-656k-q8
     - name: kvnats
       type: capability
       properties:
         image: ghcr.io/wasmcloud/keyvalue-nats:0.3.1
+    - name: ollama
+      type: capability
+      properties:
+        image: file://./ollama-provider/build/ollama-provider.par.gz
     # Add a capability provider that enables HTTP access
     - name: httpserver
       type: capability
